@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Untuk Bapak Guru Majid/Maman 🎁</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #e7ddff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* =========================
+       HALAMAN 1
+    ========================= */
+
+    #halaman1 {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container1 {
+      padding: 30px;
+    }
+
+    .judul1 {
+      font-size: 30px;
+      color: #7044a8;
+      margin-bottom: 20px;
+      animation: muncul 1s ease;
+    }
+
+    .subjudul {
+      font-size: 17px;
+      color: #555;
+      margin-bottom: 30px;
+      animation: muncul 1.5s ease;
+    }
+
+    .kado {
+      font-size: 120px;
+      cursor: pointer;
+      display: inline-block;
+      animation: goyang 1.5s infinite;
+      transition: 0.3s;
+    }
+
+    .kado:hover {
+      transform: scale(1.15);
+    }
+
+    .tombol {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+
+      background: #7044a8;
+      color: white;
+
+      border: none;
+      border-radius: 30px;
+
+      font-size: 17px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .tombol:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+
+    /* =========================
+       HALAMAN 2
+    ========================= */
+
+    #halaman2 {
+      display: none;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container2 {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .judul2 {
+      font-size: 32px;
+      color: #7b4bb7;
+      margin-bottom: 35px;
+      animation: muncul 1s ease;
+    }
+
+    /* AREA 3 FOTO */
+
+    .foto-area {
+      position: relative;
+      width: 330px;
+      height: 360px;
+      margin: auto;
+      animation: naik 1.2s ease;
+    }
+
+    .foto {
+      position: absolute;
+
+      object-fit: cover;
+
+      border-radius: 18px;
+      border: 5px solid white;
+
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+
+      transition: 0.3s;
+    }
+
+    .foto:hover {
+      transform: scale(1.07);
+    }
+
+    /* FOTO ATAS */
+
+    .foto1 {
+      width: 140px;
+      height: 165px;
+
+      top: 0;
+      left: 95px;
+
+      transform: rotate(-2deg);
+    }
+
+    /* FOTO KIRI */
+
+    .foto2 {
+      width: 125px;
+      height: 150px;
+
+      bottom: 20px;
+      left: 5px;
+
+      transform: rotate(-7deg);
+    }
+
+    /* FOTO KANAN */
+
+    .foto3 {
+      width: 125px;
+      height: 150px;
+
+      bottom: 20px;
+      right: 5px;
+
+      transform: rotate(7deg);
+    }
+
+
+    /* KARTU UCAPAN */
+
+    .kartu {
+      background: rgba(255, 255, 255, 0.75);
+
+      backdrop-filter: blur(8px);
+
+      padding: 25px;
+
+      border-radius: 25px;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+      animation: muncul 1.8s ease;
+    }
+
+    .kartu h2 {
+      margin-top: 0;
+      color: #7b4bb7;
+      font-size: 26px;
+    }
+
+    .kartu p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+
+    /* =========================
+       ANIMASI
+    ========================= */
+
+    @keyframes muncul {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes naik {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes goyang {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(-6deg);
+      }
+
+      50% {
+        transform: rotate(6deg);
+      }
+
+      75% {
+        transform: rotate(-4deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+
+    /* =========================
+       UNTUK HP
+    ========================= */
+
+    @media (max-width: 400px) {
+
+      .judul1 {
+        font-size: 27px;
+      }
+
+      .judul2 {
+        font-size: 27px;
+      }
+
+      .foto-area {
+        width: 300px;
+        height: 340px;
+      }
+
+      .foto1 {
+        left: 80px;
+      }
+
+      .foto2 {
+        left: 0;
+      }
+
+      .foto3 {
+        right: 0;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =================================
+       HALAMAN 1
+  ================================== -->
+
+  <section id="halaman1">
+
+    <div class="container1">
+
+      <h1 class="judul1">
+        🎁 Untuk Bapak Guru Majid/Maman
+      </h1>
+
+      <p class="subjudul">
+        Sebuah hadiah kecil dari kami ❤️
+      </p>
+
+      <div class="kado">
+        🎁
+      </div>
+
+      <br>
+
+      <button class="tombol" onclick="bukaKado()">
+        Buka Kado 🎁
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       HALAMAN 2
+  ================================== -->
+
+  <section id="halaman2">
+
+    <div class="container2">
+
+      <h1 class="judul2">
+        🎂 Selamat Ulang Tahun 🎂
+      </h1>
+
+
+      <!-- 3 FOTO -->
+
+      <div class="foto-area">
+
+        <!-- FOTO ATAS -->
+        <img
+          class="foto foto1"
+          src="IMG_20260928_182844.jpg"
+          alt="Foto Guru"
+        >
+
+        <!-- FOTO KIRI -->
+        <img
+          class="foto foto2"
+          src="IMG_20260928_185554.jpg"
+          alt="Foto Guru"
+        >
+
+        <!-- FOTO KANAN -->
+        <img
+          class="foto foto3"
+          src="IMG_20260928_185618.jpg"
+          alt="Foto Guru"
+        >
+
+      </div>
+
+
+      <!-- UCAPAN -->
+
+      <div class="kartu">
+
+        <h2>
+          Untuk Bapak Guru Majid/Maman ❤️
+        </h2>
+
+        <p>
+
+          Selamat ulang tahun, Pak! 🎉
+
+          <br><br>
+
+          Terima kasih sudah selalu membimbing,
+          mengajari, dan menemani kami selama ini.
+
+          <br><br>
+
+          Semoga Bapak selalu diberikan kesehatan,
+          kebahagiaan, dan umur yang panjang.
+
+          <br><br>
+
+          Semoga selalu menjadi guru yang hebat
+          dan terus menginspirasi kami! ❤️
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       JAVASCRIPT
+  ================================== -->
+
+  <script>
+
+    function bukaKado() {
+
+      // Sembunyikan halaman 1
+      document.getElementById("halaman1").style.display = "none";
+
+      // Tampilkan halaman 2
+      document.getElementById("halaman2").style.display = "block";
+
+      // Kembali ke bagian paling atas
+      window.scrollTo(0, 0);
+
+    }
+
+  </script>
+
+
+</body>
+</html>
